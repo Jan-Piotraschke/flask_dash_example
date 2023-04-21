@@ -1,0 +1,4 @@
+key,created,agency,agency_name,complaint_type,descriptor,incident_zip,city,latitude,longitude
+33247861,2016-04-18 08:56:00 UTC,HPD,Department of Housing Preservation and Development,HEAT/HOT WATER,NO HEAT,11226,BROOKLYN,40.650406262992206,-73.959131224087084
+24569875,2013-05-07 17:20:00 UTC,DOE,Department of Education,SAFETY,Non Emergency School Violation,10013,NEW YORK,40.721651427337921,-74.004522562343238
+28094235,2014-06-28 12:10:00 UTC,DEP,Department of Environmental Protection,Noise,Noise: Vehicle,11378,MASPETH,40.72746300582024,-73.904166299748754

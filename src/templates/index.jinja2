@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Upload</title>
+    <script src="{{ url_for('static', filename='upload.js') }}"></script>
+</head>
+<body>
+    <input type="file" id="folder-input" webkitdirectory directory multiple />
+    <button onclick="uploadFiles()">Upload</button>
+    <div id="status"></div>
+</body>
+</html>
