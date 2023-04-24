@@ -1,0 +1,25 @@
+/*hier wird das Design festgelegt*/
+
+body {
+    margin: 0;
+    text-align: 'center';
+  }
+
+
+input[type="file"] {
+    display: none;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: 'center';
+  }
+
+.choosefolder_alignment{
+    text-align: 'center';
+}
+
+.dropdown{
+    text-align: 'center';
+}

@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folder Upload</title>
-    <script src="{{ url_for('static', filename='upload.js') }}"></script>
-</head>
-<body>
-    <input type="file" id="folder-input" webkitdirectory directory multiple />
-    <button onclick="uploadFiles()">Upload</button>
-    <div id="status"></div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> MRI Registration </title>
+        <link rel="icon" type="image/x-icon"r href="./favicon.ico">
+        <link rel="stylesheet" href="./static/css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <script src="{{ url_for('static', filename='upload.js') }}"></script>   
+    </head>
+
+    <body>
+        <header>
+        <figure class="image">
+            <img src="./first_Logo.png" style="width: 55vw; max-width: 80px;">
+        </figure>
+        </header>
+        <input type="file" id="folder-input" webkitdirectory directory multiple "/>
+        <button class="button is-info" onclick="uploadFiles()">Upload</button>
+        <div id="status"></div>
+    </body>
 </html>

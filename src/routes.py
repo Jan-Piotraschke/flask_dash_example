@@ -2,8 +2,9 @@ from flask import render_template, request, send_from_directory
 from flask import current_app as app
 import os
 import shutil
-
-upload_folder = './uploads'
+from pathlib import Path, PureWindowsPath
+#breakpoint()
+upload_folder =Path(str(Path.cwd()) + '/uploads').as_posix()# './uploads'
 app.config['UPLOAD_FOLDER'] = upload_folder
 
 @app.route('/')
@@ -23,7 +24,13 @@ def upload_files():
 
     for key, file in request.files.items():
         if file:
-            file.save(os.path.join(upload_folder, file.filename))
+            # Create any missing subdirectories in the file path
+            file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename).replace('\\', '/')
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+            # Save the file
+            file.save(file_path)
+            #file.save(upload_folder(upload_folder, file.filename))
 
     return 'Files uploaded successfully', 200
 

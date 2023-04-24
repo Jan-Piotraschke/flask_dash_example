@@ -7,6 +7,7 @@ import os
 def create_dataframe():
     """Create Pandas DataFrame from uploaded CSV."""
     uploads_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'uploads')
+    # uploads_folder = Path(str(Path.cwd()) + '/uploads')
 
     # Check if the uploads folder exists
     if os.path.exists(uploads_folder): 
