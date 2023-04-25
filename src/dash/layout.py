@@ -19,7 +19,7 @@ html_layout = """
             <header>
               <div class="nav-wrapper">
                 <a href="#" onclick="deleteUploadsAndGoHome()">
-                    <img src="/static/img/logo.png" class="logo" />
+                    <img src="/static/templates/first_Logo.png" class="logo" />
                     <h1>Zur Datenauswahl</h1>
                   </a>
                 <nav>
